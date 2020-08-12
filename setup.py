@@ -12,7 +12,7 @@ import sys
 from setuptools import setup, find_packages
 
 try:
-    README = open('README.rst').read()
+    README = open('README.md').read()
 except Exception:
     README = ""
 
@@ -20,12 +20,19 @@ setup(
     name='text_cosine',
     version="0.0.1",
     description='text_cosine',
-    url="https://github.com/spenly/text_cosine.git",
-    long_description=README,
     author='spenly',
     author_email='i@spenly.com',
+    long_description=README,
+    long_description_content_type="text/markdown",
+    url="https://github.com/spenly/text_cosine.git",
     packages=find_packages(),
     install_requires=[],
     extras_require={},
     entry_points={},
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.5'
 )
