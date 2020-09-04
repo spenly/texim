@@ -5,4 +5,4 @@ try:
 except:
     __version__ = 'unknown'
 
-from text_cosine.base import text_cosine, words_match
+from texim.base import similarity, words_match, cosine, jaccard
